@@ -40,7 +40,12 @@
 }
 .fa-search {
   color: #bbbbbb;
-}.header-logo {
+}
+.fa-search:hover {
+  color: #18cfab;
+  transition: 0.4s;
+}
+.header-logo {
   text-decoration: none;
 }
 /* HEADER NAV BAR END */
@@ -76,4 +81,26 @@ color: #d4d4d4;
 font-family: 'Montserrat', sans-serif;
 font-size: 34px;
 font-weight: 300;
+margin-bottom: 146px;
+}
+.btn-all {
+  /* width: 166px;
+  height: 61px; */
+  padding: 26px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  border-radius: 6px;
+  box-sizing: border-box;
+  border-top: 4px solid white; 
+}
+.header-explore-btn {
+  background-color: #18cfab;
+  margin-right: 30px;
+}
+.header-purchase-btn {
+  background-color: #00cbf6;
 }
