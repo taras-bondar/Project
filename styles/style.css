@@ -2,6 +2,8 @@
 
 .bg-img {
   background-image: url(../images/section-1\(header\).jpg);
+  background-color: rgba(67, 65, 56, 0.6);
+  background-blend-mode: multiply;
   min-height: 1012px;
   background-size: cover;
 }
@@ -21,6 +23,17 @@
   font-family: 'Montserrat', sans-serif;
   font-size: 13px;
   font-weight: 700;
+  position: relative;
+}
+.header-link-item:hover::after {
+  content: "";
+  background-color: #18cfab;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -53px;
+  left: 0px;
+
 }
 .header-link-item:hover {
   color: #18cfab;
@@ -84,8 +97,6 @@ font-weight: 300;
 margin-bottom: 146px;
 }
 .btn-all {
-  /* width: 166px;
-  height: 61px; */
   padding: 26px;
   text-decoration: none;
   text-transform: uppercase;
@@ -103,4 +114,97 @@ margin-bottom: 146px;
 }
 .header-purchase-btn {
   background-color: #00cbf6;
+}
+/* HEADER FINISHED */
+/*  SERVICES START */
+.services-blocks {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 82px;
+
+}
+.services-text {
+  width: 480px;
+  height: 374px;
+}
+.serv-theme {
+  background-color: #1c2a33;
+  border-top: 6px solid #18cfab;
+}
+.serv-castomize {
+  background-color: #18cfab;
+  border-top: 6px solid #ffffff;
+}
+.serv-support {
+  background-color: #1c2a33;
+  border-top: 6px solid #18cfab;
+}
+.serv-responsive {
+  background-color: #18cfab;
+  border-top: 6px solid #ffffff;
+}
+.services-items {
+  width: 25%;
+  height: 374px;  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+.services-img {
+}
+.services-text {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.text-color-odd {
+  color: #18cfab;
+  margin-top: 49px;
+}
+.text-color-even {
+  color: #ffffff;
+  margin-top: 59px;
+}
+.services-img-theme {
+  margin-top: 95px;
+}
+.services-img-cast {
+  margin-top: 106px;
+}
+.services-img-support {
+  margin-top: 95px;
+}
+.services-img-resp {
+  margin-top: 105px;
+}
+/* SERVICES BLOCKS FINISHED */
+/* SERVICES DESCRIPTION START */
+.section-title {
+  color: #4e4e4e;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 112px;
+  position: relative;
+}
+.section-title::before {
+  content: "";
+  width: 76px;
+  height: 1px;
+  background-color: #18cfab;
+  position: absolute;
+  bottom: -37px;
+  left: 47%;
+}
+.section-title::after {
+  content: "";
+  width: 76px;
+  height: 1px;
+  background-color: #18cfab;
+  position: absolute;
+  bottom: -41px;
+  left: 48%;
 }
