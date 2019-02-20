@@ -125,7 +125,6 @@ margin-bottom: 146px;
   display: flex;
   justify-content: center;
   margin-bottom: 82px;
-
 }
 .services-text {
   width: 480px;
@@ -215,9 +214,7 @@ margin-bottom: 146px;
 }
 .services-options {
   display: flex;
-  width: 1140px;
   justify-content: flex-center;
-  margin: 0 auto;
   margin-bottom: 25px;
 }
 .services-title {
@@ -257,9 +254,6 @@ margin-bottom: 146px;
 .service-description {
   display: flex;
   justify-content: flex-start;
-  width: 1140px;
-  margin: 0 auto;
-
 }
 .service-img {
   border: 1px solid #d2d2d2;
@@ -407,7 +401,7 @@ margin-bottom: 146px;
 /* SECTION BREAKING NEWS START */
 .breaking-news {
   margin-top: 84px;
-  margin-bottom: 131px;
+  margin-bottom: 132px;
 }
 .news-container {
   display: flex;
@@ -468,3 +462,44 @@ margin-bottom: 146px;
   margin-left: 20px;
 }
 /* SECTION BREAKING NEWS END */
+/* ABOUT US SECTION START */
+.about-us {
+background-image: url(../images/about-us/about-us-img.jpg);
+min-height: 852px;
+background-size: cover;
+background-repeat: no-repeat;
+background-color: #2e4a5be7;
+background-blend-mode: multiply;
+margin-bottom: 100px;
+}
+.title-about-us {
+  padding-top: 100px;
+  color: #ffffff;
+  margin-bottom: 73px;
+
+}
+/* ABOUT US SECTION END */
+/* FOOTER START */
+.footer {
+  min-height: 108px;
+  background-color: #22353f;
+  margin-bottom: 20px;
+}
+.footer-wrapper {
+  min-height: 108px;
+  display: flex;
+  justify-content: center;
+}
+.footer-copyright {
+  align-self: center;
+  height: 14px;
+  color: #aeaeae;
+  font-family: 'Montserrat',sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+}
+.footer-link {
+  color: #18cfab;
+  text-decoration: none;
+}
+/* FOOTER END */
