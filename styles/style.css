@@ -14,10 +14,11 @@
 .header-wrapper {
   min-height: 120px;
   background-color: rgba(66, 66, 66, 0.6);
+}
+.main-header {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
-
 }
 .header-link-item {
   text-decoration: none;
@@ -35,7 +36,7 @@
   position: absolute;
   width: 100%;
   height: 2px;
-  bottom: -53px;
+  bottom: -58px;
   left: 0px;
 
 }
@@ -43,11 +44,51 @@
   color: #18cfab;
   transition: 0.4s;
 }
+.ham-logo {
+  width: 60px;
+  height: 35px;
+  background: #18cfab;
+  position: relative;
+  margin: 48px 0;
+}
+.ham-logo::before {
+  content: "";
+  position: absolute;
+  top: -18px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-bottom: 18px solid #18cfab;
+}
+.ham-logo::after {
+  content: "";
+  position: absolute;
+  bottom: -18px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-top: 18px solid #18cfab;
+}
+.ham-letter {
+  color: #fff;
+  font-size: 40px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;    
+  position: absolute;
+  left: 15px;
+  top: -4px;
+}
 .header-logo {
   color: #ffffff;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 32px;
+  margin-right: 292px;
+  margin-left: 8px;
 }
 .logo-style {
   font-family: 'Montserrat', sans-serif;
@@ -467,8 +508,9 @@ margin-bottom: 146px;
 background-image: url(../images/about-us/about-us-img.jpg);
 min-height: 852px;
 background-size: cover;
+background-attachment: fixed;
 background-repeat: no-repeat;
-background-color: #2e4a5be7;
+background-color: #2e4a5b83;
 background-blend-mode: multiply;
 margin-bottom: 100px;
 }
