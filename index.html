@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="styles/reset.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
   <link rel="stylesheet" href="styles/style.css">
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <title>The Ham</title>
 </head>
 <body>
@@ -71,9 +72,29 @@
         <li class="services-title">Online Marketing</li>
         <li class="services-title">Seo Service</li>
     </ul>
-    <div class="service-description container">
-      <img src="images/services-block/service-section.jpg" alt="#" class="service-img">
+    <div class="service-description container active">
+      <img src="images/services-block/service-web-design.jpg" alt="#" class="service-img">
         <p class="service-text-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+    <div class="service-description container">
+      <img src="images/services-block/service-graphic.jpg" alt="#" class="service-img">
+        <p class="service-text-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis culpa nulla quos veritatis necessitatibus ut? Quisquam fuga ab numquam facere nihil dolorum aspernatur excepturi incidunt nisi quod. Nostrum, repellat corrupti.</p>
+    </div>
+    <div class="service-description container">
+      <img src="images/services-block/service-support.jpg" alt="#" class="service-img">
+        <p class="service-text-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia hic eos nam dolor consectetur sit aliquid esse autem obcaecati, ut facere eligendi voluptatum inventore asperiores velit dicta sapiente labore. Vitae.</p>
+    </div>
+    <div class="service-description container">
+      <img src="images/services-block/service-app-design.jpg" alt="#" class="service-img">
+        <p class="service-text-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis saepe accusamus obcaecati blanditiis numquam amet molestias alias quibusdam inventore aliquam dolorem ut sequi, impedit non velit. Id odio nemo amet.</p>
+    </div>
+    <div class="service-description container">
+      <img src="images/services-block/service-marketing.jpg" alt="#" class="service-img">
+        <p class="service-text-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ducimus quisquam nemo tenetur, distinctio tempora provident doloremque explicabo laudantium id molestiae. Quas odit aut corporis unde, aliquid sint soluta magnam.</p>
+    </div>
+    <div class="service-description container">
+      <img src="images/services-block/service-seo.jpg" alt="#" class="service-img">
+        <p class="service-text-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates voluptatum quisquam sunt? Iusto explicabo quia a vero rerum consequuntur alias magni atque, tenetur eligendi assumenda molestiae reprehenderit harum ratione quaerat.</p>
     </div>
   </section>
   <section class="buy-now-section">
@@ -86,11 +107,11 @@
   <section class="work-section">
     <h2 class="section-title">Our Amazing Work</h2>
     <ul class="work-options" id="workOptions">
-      <li data-target="img-section" class="work-example active-work">All</li>
-      <li data-target="graphic-design" class="work-example">Graphic Design</li>
-      <li data-target="web-design" class="work-example">Web Design</li>
-      <li data-target="landing-page" class="work-example">Landing Pages</li>
-      <li data-target="wordpress" class="work-example">Wordpress</li>
+      <li id="all-img-section" class="work-example active-work">All</li>
+      <li id="graphic-design" class="work-example">Graphic Design</li>
+      <li id="web-design" class="work-example">Web Design</li>
+      <li id="landing-page" class="work-example">Landing Pages</li>
+      <li id="wordpress" class="work-example">Wordpress</li>
     </ul>
     <div class="work-img">
       <div class="img-section landing-page">
@@ -105,17 +126,6 @@
         </div>
       </div>
       <div class="img-section landing-page">
-        <img src="images/landing page/landing-page2.jpg" alt="" class="example">
-        <div class="section-description">
-            <div class="work-btns">
-            <i class="fas fa-link info-link"></i>
-            <i class="fas fa-search search-link"></i>
-            </div>
-            <h4 class="work-name">creative design</h4>
-            <p class="work-direction">Web Design</p>
-          </div>
-      </div>
-      <div class="img-section landing-page">
         <img src="images/landing page/landing-page3.jpg" alt="" class="example">
         <div class="section-description">
             <div class="work-btns">
@@ -126,8 +136,8 @@
             <p class="work-direction">Web Design</p>
           </div>
       </div>
-      <div class="img-section landing-page">
-        <img src="images/landing page/landing-page4.jpg" alt="" class="example">
+      <div class="img-section graphic-design">
+        <img src="images/graphic design/graphic-design5.jpg" alt="" class="example">
         <div class="section-description">
             <div class="work-btns">
             <i class="fas fa-link info-link"></i>
@@ -137,8 +147,8 @@
             <p class="work-direction">Web Design</p>
           </div>
       </div>
-      <div class="img-section landing-page">
-        <img src="images/landing page/landing-page5.jpg" alt="" class="example">
+      <div class="img-section wordpress">
+        <img src="images/wordpress/wordpress3.jpg" alt="" class="example">
         <div class="section-description">
             <div class="work-btns">
             <i class="fas fa-link info-link"></i>
@@ -170,8 +180,30 @@
             <p class="work-direction">Web Design</p>
           </div>
       </div>
+      <div class="img-section graphic-design">
+        <img src="images/graphic design/graphic-design2.jpg" alt="" class="example">
+        <div class="section-description">
+            <div class="work-btns">
+            <i class="fas fa-link info-link"></i>
+            <i class="fas fa-search search-link"></i>
+            </div>
+            <h4 class="work-name">creative design</h4>
+            <p class="work-direction">Web Design</p>
+          </div>
+      </div>
       <div class="img-section web-design">
         <img src="images/web design/web-design1.jpg" alt="" class="example">
+        <div class="section-description">
+            <div class="work-btns">
+            <i class="fas fa-link info-link"></i>
+            <i class="fas fa-search search-link"></i>
+            </div>
+            <h4 class="work-name">creative design</h4>
+            <p class="work-direction">Web Design</p>
+          </div>
+      </div>
+      <div class="img-section wordpress">
+        <img src="images/wordpress/wordpress9.jpg" alt="" class="example">
         <div class="section-description">
             <div class="work-btns">
             <i class="fas fa-link info-link"></i>
@@ -225,6 +257,239 @@
             <p class="work-direction">Web Design</p>
           </div>
       </div>
+      <div class="img-section graphic-design">
+        <img src="images/graphic design/graphic-design1.jpg" alt="" class="example">
+        <div class="section-description">
+            <div class="work-btns">
+            <i class="fas fa-link info-link"></i>
+            <i class="fas fa-search search-link"></i>
+            </div>
+            <h4 class="work-name">creative design</h4>
+            <p class="work-direction">Web Design</p>
+          </div>
+      </div>
+      <div class="img-section graphic-design">
+        <img src="images/graphic design/graphic-design3.jpg" alt="" class="example">
+        <div class="section-description">
+            <div class="work-btns">
+            <i class="fas fa-link info-link"></i>
+            <i class="fas fa-search search-link"></i>
+            </div>
+            <h4 class="work-name">creative design</h4>
+            <p class="work-direction">Web Design</p>
+          </div>
+      </div>
+      <div class="img-section graphic-design">
+        <img src="images/graphic design/graphic-design4.jpg" alt="" class="example">
+        <div class="section-description">
+            <div class="work-btns">
+            <i class="fas fa-link info-link"></i>
+            <i class="fas fa-search search-link"></i>
+            </div>
+            <h4 class="work-name">creative design</h4>
+            <p class="work-direction">Web Design</p>
+          </div>
+      </div>
+      <div class="img-section graphic-design">
+        <img src="images/graphic design/graphic-design6.jpg" alt="" class="example">
+        <div class="section-description">
+            <div class="work-btns">
+            <i class="fas fa-link info-link"></i>
+            <i class="fas fa-search search-link"></i>
+            </div>
+            <h4 class="work-name">creative design</h4>
+            <p class="work-direction">Web Design</p>
+          </div>
+      </div>
+      <div class="img-section graphic-design">
+        <img src="images/graphic design/graphic-design7.jpg" alt="" class="example">
+        <div class="section-description">
+            <div class="work-btns">
+            <i class="fas fa-link info-link"></i>
+            <i class="fas fa-search search-link"></i>
+            </div>
+            <h4 class="work-name">creative design</h4>
+            <p class="work-direction">Web Design</p>
+          </div>
+      </div>
+      <div class="img-section graphic-design">
+        <img src="images/graphic design/graphic-design8.jpg" alt="" class="example">
+        <div class="section-description">
+            <div class="work-btns">
+            <i class="fas fa-link info-link"></i>
+            <i class="fas fa-search search-link"></i>
+            </div>
+            <h4 class="work-name">creative design</h4>
+            <p class="work-direction">Web Design</p>
+          </div>
+      </div>
+      <div class="img-section graphic-design">
+        <img src="images/graphic design/graphic-design9.jpg" alt="" class="example">
+        <div class="section-description">
+            <div class="work-btns">
+            <i class="fas fa-link info-link"></i>
+            <i class="fas fa-search search-link"></i>
+            </div>
+            <h4 class="work-name">creative design</h4>
+            <p class="work-direction">Web Design</p>
+          </div>
+      </div>
+      <div class="img-section graphic-design">
+        <img src="images/graphic design/graphic-design10.jpg" alt="" class="example">
+        <div class="section-description">
+            <div class="work-btns">
+            <i class="fas fa-link info-link"></i>
+            <i class="fas fa-search search-link"></i>
+            </div>
+            <h4 class="work-name">creative design</h4>
+            <p class="work-direction">Web Design</p>
+          </div>
+      </div>
+      <div class="img-section graphic-design">
+        <img src="images/graphic design/graphic-design11.jpg" alt="" class="example">
+        <div class="section-description">
+            <div class="work-btns">
+            <i class="fas fa-link info-link"></i>
+            <i class="fas fa-search search-link"></i>
+            </div>
+            <h4 class="work-name">creative design</h4>
+            <p class="work-direction">Web Design</p>
+          </div>
+      </div>
+      <div class="img-section graphic-design">
+        <img src="images/graphic design/graphic-design12.jpg" alt="" class="example">
+        <div class="section-description">
+            <div class="work-btns">
+            <i class="fas fa-link info-link"></i>
+            <i class="fas fa-search search-link"></i>
+            </div>
+            <h4 class="work-name">creative design</h4>
+            <p class="work-direction">Web Design</p>
+          </div>
+      </div>
+      <div class="img-section wordpress">
+        <img src="images/wordpress/wordpress1.jpg" alt="" class="example">
+        <div class="section-description">
+            <div class="work-btns">
+            <i class="fas fa-link info-link"></i>
+            <i class="fas fa-search search-link"></i>
+            </div>
+            <h4 class="work-name">creative design</h4>
+            <p class="work-direction">Web Design</p>
+          </div>
+      </div>
+      <div class="img-section wordpress">
+        <img src="images/wordpress/wordpress2.jpg" alt="" class="example">
+        <div class="section-description">
+            <div class="work-btns">
+            <i class="fas fa-link info-link"></i>
+            <i class="fas fa-search search-link"></i>
+            </div>
+            <h4 class="work-name">creative design</h4>
+            <p class="work-direction">Web Design</p>
+          </div>
+      </div>
+      <div class="img-section wordpress">
+        <img src="images/wordpress/wordpress4.jpg" alt="" class="example">
+        <div class="section-description">
+            <div class="work-btns">
+            <i class="fas fa-link info-link"></i>
+            <i class="fas fa-search search-link"></i>
+            </div>
+            <h4 class="work-name">creative design</h4>
+            <p class="work-direction">Web Design</p>
+          </div>
+      </div>
+      <div class="img-section landing-page">
+        <img src="images/landing page/landing-page2.jpg" alt="" class="example">
+        <div class="section-description">
+            <div class="work-btns">
+            <i class="fas fa-link info-link"></i>
+            <i class="fas fa-search search-link"></i>
+            </div>
+            <h4 class="work-name">creative design</h4>
+            <p class="work-direction">Web Design</p>
+          </div>
+      </div>
+      <div class="img-section wordpress">
+        <img src="images/wordpress/wordpress5.jpg" alt="" class="example">
+        <div class="section-description">
+            <div class="work-btns">
+            <i class="fas fa-link info-link"></i>
+            <i class="fas fa-search search-link"></i>
+            </div>
+            <h4 class="work-name">creative design</h4>
+            <p class="work-direction">Web Design</p>
+          </div>
+      </div>
+      <div class="img-section landing-page">
+        <img src="images/landing page/landing-page4.jpg" alt="" class="example">
+        <div class="section-description">
+            <div class="work-btns">
+            <i class="fas fa-link info-link"></i>
+            <i class="fas fa-search search-link"></i>
+            </div>
+            <h4 class="work-name">creative design</h4>
+            <p class="work-direction">Web Design</p>
+          </div>
+      </div>
+      <div class="img-section wordpress">
+        <img src="images/wordpress/wordpress6.jpg" alt="" class="example">
+        <div class="section-description">
+            <div class="work-btns">
+            <i class="fas fa-link info-link"></i>
+            <i class="fas fa-search search-link"></i>
+            </div>
+            <h4 class="work-name">creative design</h4>
+            <p class="work-direction">Web Design</p>
+          </div>
+      </div>
+      <div class="img-section wordpress">
+        <img src="images/wordpress/wordpress7.jpg" alt="" class="example">
+        <div class="section-description">
+            <div class="work-btns">
+            <i class="fas fa-link info-link"></i>
+            <i class="fas fa-search search-link"></i>
+            </div>
+            <h4 class="work-name">creative design</h4>
+            <p class="work-direction">Web Design</p>
+          </div>
+      </div>
+      <div class="img-section wordpress">
+        <img src="images/wordpress/wordpress8.jpg" alt="" class="example">
+        <div class="section-description">
+            <div class="work-btns">
+            <i class="fas fa-link info-link"></i>
+            <i class="fas fa-search search-link"></i>
+            </div>
+            <h4 class="work-name">creative design</h4>
+            <p class="work-direction">Web Design</p>
+          </div>
+      </div>
+      <div class="img-section landing-page">
+        <img src="images/landing page/landing-page5.jpg" alt="" class="example">
+        <div class="section-description">
+            <div class="work-btns">
+            <i class="fas fa-link info-link"></i>
+            <i class="fas fa-search search-link"></i>
+            </div>
+            <h4 class="work-name">creative design</h4>
+            <p class="work-direction">Web Design</p>
+          </div>
+      </div>
+      <div class="img-section wordpress">
+        <img src="images/wordpress/wordpress10.jpg" alt="" class="example">
+        <div class="section-description">
+            <div class="work-btns">
+            <i class="fas fa-link info-link"></i>
+            <i class="fas fa-search search-link"></i>
+            </div>
+            <h4 class="work-name">creative design</h4>
+            <p class="work-direction">Web Design</p>
+          </div>
+      </div>
+    </div>
+    <div class="container">
       <a href="#" class="load-more-btn btn-all"><i class="fas fa-plus"></i>Load More</a>
     </div>
   </section>
@@ -349,6 +614,7 @@
       <p class="footer-copyright">&copy; Copyright 2015 <a href="#" class="footer-link">theHam</a> | All Rights Reserved</p>
     </div>
   </footer>
-  <script src="js/work-filter.js"></script>
+  <script src="js/services.js"></script>
+  <script src="js/filter-photo.js"></script>
 </body>
 </html>
