@@ -524,13 +524,102 @@ background-attachment: fixed;
 background-repeat: no-repeat;
 background-color: #2e4a5b83;
 background-blend-mode: multiply;
-margin-bottom: 100px;
 }
 .title-about-us {
   padding-top: 100px;
   color: #ffffff;
   margin-bottom: 73px;
+}
 
+.text-description {
+  color: #bbbbbb;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 30px;
+  text-align: center;
+  padding-top: 43px;
+  margin-bottom: 50px;
+}
+.text-description::before {
+  content: "\275B \275B";
+  color: #18cfab;
+  display: block;
+  font-size: 125px;
+  padding: 25px;
+}
+.team-member {
+  text-align: center;
+}
+.member-name {
+  color: #18cfab;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+.member-position {
+  color: #bbbbbb;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  padding-bottom: 37px;
+}
+.member-photo {
+  margin: 0 auto;
+  display: block;
+  width: 143px;
+  height: 142px;
+  border: 2px solid #18cfab;
+  border-radius: 50%;
+  box-shadow: 0px 0px 0px 11px rgba(24,207,171,0.27);
+}
+.member-slider {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  position: relative;
+  padding-bottom: 104px;
+}
+.slider-photo {
+  width: 59px;
+  height: 59px;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  box-shadow: 0px 0px 0px 5px rgba(24,207,171,0.27);
+  margin-right: 20px;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.4s ease-in-out;
+}
+.slider-photo.active {
+  top: -25px;
+  border-color: #18cfab;
+}
+.slider-arrow {
+  padding-left: 10px;
+  border: 1px solid grey;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 20px;
+  text-decoration: none;
+  color: grey;
+  font-weight: 700;
+  font-size: 20px;
+}
+.slider-arrow:hover {
+  background-color: #18cfab;
+  border-color: #18cfab;
+  color: white;
+  cursor: pointer;
+}
+.slider-arrow.left {
+  left: 360px;
+}
+.slider-arrow.right {
+  right: 380px;
 }
 /* ABOUT US SECTION END */
 /* FOOTER START */
