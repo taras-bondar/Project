@@ -1,4 +1,5 @@
 $(function() {
+  console.log('hi')
   let $servicesOptions = $('.services-title');
 
   $servicesOptions.on('click', function () {

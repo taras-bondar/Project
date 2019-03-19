@@ -384,6 +384,9 @@ margin-bottom: 146px;
   margin: 0 auto;
   padding-bottom: 71px;
 }
+.img-section {
+  position: relative;
+}
 .example {
   margin-top: -5px;
 }
@@ -534,7 +537,6 @@ margin-bottom: 100px;
 .footer {
   min-height: 108px;
   background-color: #22353f;
-  margin-bottom: 20px;
 }
 .footer-wrapper {
   min-height: 108px;
